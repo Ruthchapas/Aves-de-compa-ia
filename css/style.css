@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Matisan Script Alt PERSONAL';
+    src: url("../fonts/matisan_script/MatisanScriptPERSONALUSE-Regular.woff2") format("woff2"),
+    url("../fonts/matisan_script/MatisanScriptPERSONALUSE-Regular.woff") format("woff"),
+    url("../fonts/matisan_script/MatisanScriptPERSONALUSE-Regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato/Lato-Regular.woff') format('woff'),
+        url("../fonts/Lato/Lato-Regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+:root{
+    --width_xl : 1200px;
+    --primary_color: #eec886c2;
+    --barranav: #d6cf7bda;
+    --secundary_color: white;
+    --hover: #ffffff4d;
+    --hdos: #a39d5c;
+    --p: #3d3b22;
+    --htres: #d1ca78;
+
+}
+
+
+:root{
+    --width_xl : 1200px;
+    --primary_color: #eec886c2;
+    --barranav: #d6cf7bda;
+    --secundary_color: white;
+    --hover: #3c1010;
+    --hdos: #a39d5c;
+    --p: #3d3b22;
+    --htres: #d1ca78;
+
+}
+
+.desktop { /* punto de corte grande */
+    margin: 0 auto;
+   max-width: var(--width_xl);
+}
+.barra_nav {
+    background-color: var(--barranav);
+    color: black
+
+}
+.fondo_naranja {
+    background-color: var(--primary_color);
+    h2 {
+        font-family: 'Matisan Script Alt PERSONAL' ;
+        font-size: 3.8vw;
+        color: var(--hdos) ;
+    }
+    p {
+        color: var(--p);
+    }
+}
+.texto_derecha {
+    text-align: left;
+    padding-left: 4rem;
+    /* para la separación entre la foto y el texto */
+    h2 {
+        text-align: left;
+    }
+}
+.texto_izquierda {
+    padding-right: 4rem;
+    text-align: left;
+    h2 {
+        text-align: left;
+    }
+}
+
+
+.aves_exoticas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;;
+    div {
+        display: block;
+        width: 100%;
+        padding: 0.5rem;
+    }
+   
+    p{
+        font-size: 1.4vw;
+        width: 100%;
+        display: block;;
+    }
+    h3 {
+        font-size: 3vw;
+        color: var(--htres);
+    }
+    
+        
+}    
+
+
+.pie {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+   
+    h3 {
+        font-size: 13px;
+    }
+    p {
+        font-size: 1rem;
+        padding-top: 5px;
+    }
+    li {
+        list-style: none;
+        padding-top: 5px;
+        font-size: 13px;
+    }
+    
+}
+
+.logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    width: 120px;
+    height: 20px;
+    padding-top: 1rem;
+    
+
+    img {
+        width: 100%;  
+    }
+
+}
+.subtit {
+    h2 {
+        color: var(--hdos);
+        position: absolute;
+        right: 30vw;
+        bottom: 14vw;
+        font-size: 5vw;
+    }
+}
+
+    
+.ninfas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    justify-content: start;
+    gap: 3rem;
+    
+
+    h3 {
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+        font-family: "Lato";
+    }
+    img {
+        width: 576px;
+        height: 500px;
+        transition: transform 0.3s ease; /* Agregamos la transición */
+        margin: 0 auto;
+        display: block;
+
+    }
+    h2 {
+        font-family: "Lato";
+    }
+    
+    img:hover {
+        transform: scale(1.1); /* Aumenta el tamaño al 110% cuando se pasa el ratón */
+    } 
+/* para que aumenten las imagenes cuando pasa por encima el cursor */
+    
+    p {
+        justify-content: center;
+    }
+}
+   
+
+
+h1, h2 {
+   font-family: 'Matisan Script Alt PERSONAL';
+}
+
+h1 {
+    color: var(--primary_color);
+    position: absolute;
+    left: 15vw;
+    top: 15vw;
+    font-size: 9vw;
+}
+h2 {
+    color: var(--hdos);
+    font-size: 3.8vw;
+    text-align: center;
+    padding-top: 2rem;
+}
+header img {
+    width: 100%;
+    display: block;
+
+}
+
+main img {
+    display: block;
+}
+
+
+section > div {
+    display: flex;
+    justify-content: space-between; /* para que se vaya a los extrememos */
+}
+section > div > div {
+    width: 50%;
+    /* para que la fotos e ciña al espacio */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* por defecto el flex actua en horizontal  */
+    img {
+        width: 100%;
+
+        }
+    p {
+        font-size: 1.4vw;
+    }
+    h2{
+        font-size: 3.8vw;
+        margin-bottom: 1rem;
+    }
+}
+nav {
+    color: var(--secundary_color);
+    position: sticky;
+    /* para que menú quede siempre arriba como referencia */
+    top: 0px;
+        ul{ 
+        display: flex; /* para que los elementos se pongan uno al lado del otro */
+        justify-content: space-between;
+       
+        }
+      
+        li{
+          list-style: none;   /* quitar vñeta-la bolita-  */
+          padding: 1rem/* yo lo había hecho con align items y height */
+        }
+        a {
+            color: inherit;
+          font-size: 1rem;
+          text-decoration: none;
+          
+          &:hover {
+            border-bottom: 2px solid;
+            color: var(--hover);
+
+          }
+          
+        }
+          
+
+}
+main {
+    padding-bottom: 2rem;
+}
+
+footer {
+    a {
+        color: inherit;
+      font-size: 13px;
+      text-decoration: none;
+      
+      &:hover {
+        border-bottom: 2px solid;
+        color: var(--hover);
+    
+
+
+      }
+      
+    }
+}

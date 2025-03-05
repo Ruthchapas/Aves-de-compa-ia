@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Matisan Script PERSONAL USE';
+    src: url('MatisanScriptPERSONALUSE-Regular.woff2') format('woff2'),
+        url('MatisanScriptPERSONALUSE-Regular.woff') format('woff'),
+        url('MatisanScriptPERSONALUSE-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
